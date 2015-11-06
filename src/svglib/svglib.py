@@ -19,6 +19,7 @@ import sys
 import os
 import glob
 import types
+import string
 import re
 import operator
 import gzip
