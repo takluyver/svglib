@@ -19,6 +19,7 @@ import sys
 import os
 import glob
 import types
+import string
 import re
 import operator
 import gzip
@@ -178,11 +179,13 @@ def normaliseSvgPath(attr):
     # same for m and l.
     for i in xrange(0, len(res), 2):
         op, nums = res[i:i+2]
-        if i >= 2:
-            if op == 'M' == res[i-2]:
-                res[i] = 'L'
-            elif op == 'm' == res[i-2]:
-                res[i] = 'l'
+        for j in xrange(i+2, len(res), 2):
+            if op == 'M' == res[j]:
+                res[j] = 'L'
+            elif op == 'm' == res[j]:
+                res[j] = 'l'
+            else:
+                break
 
     return res
 
