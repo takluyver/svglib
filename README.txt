@@ -1,17 +1,16 @@
 .. -*- mode: rst -*-
 
 ========
-Svglib
+Svglib_fix
 ========
 
 ---------------------------------------------------------------------------
-An experimental library for reading and converting SVG
+A branch of svglib with a fixed missing import
 ---------------------------------------------------------------------------
 
-:Author:     Dinu Gherman <gherman@darwin.in-berlin.de>
-:Homepage:   http://www.dinu-gherman.net/
-:Version:    Version 0.6.3
-:Date:       2010-03-01
+:Author:     Jędrek Fulara <jedrek@sparkbit.pl>
+:Version:    Version 0.0.4
+:Date:       2015-06-29
 :Copyright:  GNU Lesser General Public Licence v3 (LGPLv3)
 
 
@@ -33,9 +32,7 @@ It also accesses around `200 flags from Wikipedia.org
 <http://en.wikipedia.org/wiki/Gallery_of_sovereign_state_flags>`_ 
 for test purposes (some of them hinting at more work to be done).
 
-This release changes the license from GPL 3 to LGPL 3, introduces
-tiny bug fix reported by Harald Armin Massa and adapts to changed 
-URLs for Wikipedia SVG flags used for test purposes.
+This release adds support for opacity.
  
 
 Features

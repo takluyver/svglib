@@ -3,14 +3,12 @@
 
 "Project meta information"
 
-
-__version__ = "0.6.3"
+__version__ = "0.0.4"
 __license__ = "LGPL 3"
-__author__ = "Dinu Gherman"
-__date__ = "2010-03-01"
+__author__ = "Jędrek Fulara"
+__date__ = "2015-06-29"
 
-
-name = "svglib"
+name = "svglib_fix"
 version = __version__
 date = __date__
 description = "An experimental library for reading and converting SVG."
@@ -30,10 +28,7 @@ It also accesses around `200 flags from Wikipedia.org
 <http://en.wikipedia.org/wiki/Gallery_of_sovereign_state_flags>`_ 
 for test purposes (some of them hinting at more work to be done).
 
-This release changes the license from GPL 3 to LGPL 3, introduces
-tiny bug fix reported by Harald Armin Massa and adapts to changed 
-URLs for Wikipedia SVG flags used for test purposes.
-
+This release contains a fix for a missing import in the svglib library.
 
 Features
 ++++++++
@@ -68,17 +63,14 @@ typing ``svg2pdf -h``)::
     $ svg2pdf file1.svg file2.svgz
     $ svg2pdf -o "%(basename)s.pdf" /path/file[12].svgz?
 """
-author = 'Dinu Gherman'
-author_email = '@'.join(['gherman', 'darwin.in-berlin.de'])
+author = 'Jędrek Fulara'
+author_email = '@'.join(['jedrek', 'sparkbit.pl'])
 maintainer = author
 maintainer_email = author_email
-license_short = 'GNU GPL'
+license_short = 'GNU LGPL'
 license = __license__
 platforms = ["Posix", "Windows"]
 keywords = ["svg", "reportlab", "PDF"]
-_baseURL = "http://www.dinu-gherman.net/"
-url = _baseURL
-download_url = _baseURL + "tmp/%s-%s.tar.gz" % (name, __version__)
 package_dir = {"svglib": "src/svglib"}
 packages = ["svglib"]
 py_modules = []
