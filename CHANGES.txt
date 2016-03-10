@@ -1,0 +1,12 @@
+=========
+CHANGELOG
+=========
+
+0.1 (unreleased)
+================
+
+- Fork of https://github.com/borgar/svglib
+
+- Integrated changes from https://pypi.python.org/pypi/svglib_fix/0.0.4
+
+- Add compatability to Python 3
