@@ -1,39 +1,33 @@
 .. -*- mode: rst -*-
 
-========
-Svglib_fix
-========
+=======
+Svglib3
+=======
 
----------------------------------------------------------------------------
-A branch of svglib with a fixed missing import
----------------------------------------------------------------------------
-
-:Author:     Jędrek Fulara <jedrek@sparkbit.pl>
-:Version:    Version 0.0.4
-:Date:       2015-06-29
-:Copyright:  GNU Lesser General Public Licence v3 (LGPLv3)
-
+-------------------------------------------------------------------------
+A branch of svglib with a fixed missing import and Python 3 compatability
+-------------------------------------------------------------------------
 
 About
 -----
 
-`Svglib` is an experimental library for reading `SVG 
-<http://www.w3.org/Graphics/SVG/>`_ files and converting them (to a 
-reasonable degree) to other formats using the Open Source `ReportLab 
-Toolkit <http://www.reportlab.org>`_. As a package it reads existing 
-SVG files and returns them converted to ReportLab Drawing objects that 
-can be used in a variety of ReportLab-related contexts, e.g. as Platypus 
-Flowable objects or in RML2PDF. As a command-line tool it converts SVG 
-files into PDF ones. 
+`Svglib` is an experimental library for reading `SVG
+<http://www.w3.org/Graphics/SVG/>`_ files and converting them (to a
+reasonable degree) to other formats using the Open Source `ReportLab
+Toolkit <http://www.reportlab.org>`_. As a package it reads existing
+SVG files and returns them converted to ReportLab Drawing objects that
+can be used in a variety of ReportLab-related contexts, e.g. as Platypus
+Flowable objects or in RML2PDF. As a command-line tool it converts SVG
+files into PDF ones.
 
-Tests include a vast amount of tests from the `W3C SVG test suite 
+Tests include a vast amount of tests from the `W3C SVG test suite
 <http://www.w3.org/Graphics/SVG/WG/wiki/Test_Suite_Overview>`_.
-It also accesses around `200 flags from Wikipedia.org 
-<http://en.wikipedia.org/wiki/Gallery_of_sovereign_state_flags>`_ 
+It also accesses around `200 flags from Wikipedia.org
+<http://en.wikipedia.org/wiki/Gallery_of_sovereign_state_flags>`_
 for test purposes (some of them hinting at more work to be done).
 
 This release adds support for opacity.
- 
+
 
 Features
 --------
@@ -61,13 +55,13 @@ interactive Python session::
     >>> drawing = svg2rlg("file.svg")
     >>> renderPDF.drawToFile(drawing, "file.pdf")
 
-In addition a script named ``svg2pdf`` can be used more easily from 
-the system command-line like this (you can see more examples when 
+In addition a script named ``svg2pdf`` can be used more easily from
+the system command-line like this (you can see more examples when
 typing ``svg2pdf -h``)::
 
     $ svg2pdf file1.svg file2.svgz
     $ svg2pdf -o "%(basename)s.pdf" /path/file[12].svgz?
-  
+
 
 Installation
 ------------
@@ -78,33 +72,33 @@ the `easy_install` command available on your system or not.
 1. Using `easy_install`
 ++++++++++++++++++++++++
 
-With the `easy_install` command on your system and a working internet 
+With the `easy_install` command on your system and a working internet
 connection you can install `svglib` with only one command in a terminal::
 
   $ easy_install svglib
 
 If the `easy_install` command is not available to you and you want to
-install it before installing `svglib`, you might want to go to the 
-`Easy Install homepage <http://peak.telecommunity.com/DevCenter/EasyInstall>`_ 
+install it before installing `svglib`, you might want to go to the
+`Easy Install homepage <http://peak.telecommunity.com/DevCenter/EasyInstall>`_
 and follow the `instructions there <http://peak.telecommunity.com/DevCenter/EasyInstall#installing-easy-install>`_.
 
 2. Manual installation
 +++++++++++++++++++++++
 
-Alternatively, you can install the `svglib` tarball after downloading 
-the file ``svglib-0.6.3.tar.gz`` and decompressing it with the following 
+Alternatively, you can install the `svglib` tarball after downloading
+the file ``svglib-0.6.3.tar.gz`` and decompressing it with the following
 command::
 
   $ tar xfz svglib-0.6.3.tar.gz
 
-Then change into the newly created directory ``svglib`` and install 
+Then change into the newly created directory ``svglib`` and install
 `svglib` by running the following command::
 
   $ python setup.py install
-  
-This will install a Python module file named ``svglib.py`` in the 
-``site-packages`` subfolder of your Python interpreter and a script 
-tool named ``svglib`` in your ``bin`` directory, usually in 
+
+This will install a Python module file named ``svglib.py`` in the
+``site-packages`` subfolder of your Python interpreter and a script
+tool named ``svglib`` in your ``bin`` directory, usually in
 ``/usr/local/bin``.
 
 
@@ -120,10 +114,10 @@ installed automatically using `easy_install`.
 Testing
 -------
 
-The `svglib` tarball distribution contains a Unittest test suite 
-in the file ``test_svglib.py`` which can be run like shown in the 
+The `svglib` tarball distribution contains a Unittest test suite
+in the file ``test_svglib.py`` which can be run like shown in the
 following lines on the system command-line::
- 
+
   $ tar xfz svglib-0.6.3.tar.gz
   $ cd svglib/src/test
   $ python test_svglib.py
@@ -143,6 +137,6 @@ following lines on the system command-line::
 Bug reports
 -----------
 
-Please report bugs and patches to Dinu Gherman 
-<gherman@darwin.in-berlin.de>. Don't forget to include information 
+Please report bugs and patches to Dinu Gherman
+<gherman@darwin.in-berlin.de>. Don't forget to include information
 about the operating system, ReportLab and Python versions being used.

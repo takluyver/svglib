@@ -1,6 +1,6 @@
 """SVGLIB"""
 
-from setuptools import setup, find_packages
+from setuptools import setup
 import glob
 import os.path
 import sys
@@ -20,15 +20,16 @@ def read(path):
     return text
 
 setup(
-    name='svglib',
-    version='0.7.0',
+    name='svglib3',
+    version='0.1',
 
     install_requires=[
     ],
 
-    author='Dinu Gherman',
-    author_email='',
+    author='Sebastian Wehrmann, Dinu Gherman',
+    author_email='sebastian.wehrmann@icloud.com, gherman@darwin.in-berlin.de',
     license='LGPL 3',
+    url='https://github.com/sweh/svglib',
 
     keywords='',
     classifiers="""\
@@ -42,6 +43,13 @@ setup(
         Operating System :: Microsoft :: Windows
         Operating System :: POSIX
         Programming Language :: Python
+        Programming Language :: Python :: 2
+        Programming Language :: Python :: 2.6
+        Programming Language :: Python :: 2.7
+        Programming Language :: Python :: 3
+        Programming Language :: Python :: 3.3
+        Programming Language :: Python :: 3.4
+        Programming Language :: Python :: 3.5
         Topic :: Documentation
         Topic :: Multimedia :: Graphics :: Graphics Conversion
         Topic :: Printing
@@ -49,9 +57,10 @@ setup(
         Topic :: Text Processing :: Markup :: XML
         Topic :: Utilities
 """[:-1].split('\n'),
-    description="An experimental library for reading and converting SVG.",
+    description="An experimental library for reading and converting SVG. Python 3 compatible.",
     long_description='\n\n'.join(read(project_path(name)) for name in (
         'README.txt',
+        'CHANGES.txt'
     )),
 
     include_package_data=True,
