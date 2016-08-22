@@ -5,7 +5,7 @@ CHANGELOG
 0.2 (unreleased)
 ================
 
-- Nothing changed yet.
+- Made svglib installable via pip. Thanks to Adrien Cossa for the bug report.
 
 
 0.1 (2016-03-10)

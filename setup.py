@@ -30,7 +30,8 @@ setup(
     author_email='sebastian.wehrmann@icloud.com, gherman@darwin.in-berlin.de',
     license='LGPL 3',
     url='https://github.com/sweh/svglib',
-
+    package_dir={'svglib': 'src/svglib'},
+    packages=['svglib'],
     keywords='',
     classifiers="""\
         Development Status :: 4 - Beta
