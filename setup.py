@@ -21,7 +21,7 @@ def read(path):
 
 setup(
     name='svglib3',
-    version='0.2',
+    version='0.3.dev0',
 
     install_requires=[
     ],
