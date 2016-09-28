@@ -4,9 +4,7 @@
 Svglib3
 =======
 
--------------------------------------------------------------------------
-A branch of svglib with a fixed missing import and Python 3 compatability
--------------------------------------------------------------------------
+*A branch of svglib with a fixed missing import and Python 3 compatability*
 
 About
 -----
